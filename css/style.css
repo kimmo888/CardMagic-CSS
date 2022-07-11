@@ -1,0 +1,140 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+html {
+	font-size: 62.5%;
+}
+.contenedorMaster{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.contenedorCarta{
+    max-width: 460px;
+    min-width: 360px;
+    border: 8px solid black;
+    border-radius: 20px;
+    overflow: hidden;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+}
+.contenedorCarta img{
+    width: 444px;
+}
+.name-card{
+    height: 40px;
+    background-color: antiquewhite;
+    border: 4px solid black;
+    border-radius: 8px;
+    position: fixed;
+    top: 8vh;
+}
+.name-card h1{
+    font-size: 3rem;
+    line-height: 1em;
+    text-align: center;
+}
+.type-card{
+    max-width: 440px;
+    min-width: calc(440px - 2%);
+    height: 30px;
+    background-color: antiquewhite;
+    border: 4px solid black;
+    border-radius: 8px;
+    position: fixed;
+    top: 62vh;
+
+}
+.type-card h2{
+    font-size: calc(1em + 0.9vw);
+    line-height: 1em;
+    margin: 2px px;
+}
+
+/* //=============================================================// */
+.conteiner-description{
+    max-width: 380px;
+    position: absolute;
+    border: 2px solid black;
+    border-radius: 20px;
+    top: 70vh;
+}
+.ability-card{
+    top: -28vh;
+}
+.ability-card div img{
+    width: calc(4em + 0.5vw);
+}
+.ability-card div figure{
+    position: relative;
+    left: -7%;
+    display: flex;
+    align-items: center;
+}
+.num{
+    color: white;
+    font-weight: bold;
+}
+div .num{
+    position: relative;
+    left: -50%;
+    font-size: 1.4rem;
+}
+div .abil{
+    position: relative;
+    left: -10%;
+    font-weight: bold;
+    font-size: 1.4rem;
+    padding-right: 7px;
+}
+.ability-card div{
+    display: flex;
+    align-items: center;
+}
+.px{
+    position: absolute;
+    z-index: 1;
+    bottom: -40px;
+    right: 0px;
+}
+.loyal img{
+    width: calc(5em + 0.7vw);
+}
+div .num-loyal{
+    position: absolute;
+    top: 25%;
+    left: 45%;
+    color: white;
+    font-weight: bold;
+    font-size: calc(1.2em + 0.7vw);
+}
+
+
+/* //=============================================================// */
+@media screen and (max-width: 460px){
+    .contenedorCarta{
+        width: calc(100% - 10px);
+        height: calc(100% - 10px);
+    }
+    .type-card{
+        min-width: calc(360px - 5%);
+    }
+    .conteiner-description{
+        max-width: calc(100% - 55px);
+        left: 8%;
+        height: 150px;
+    }
+    div .abil{
+        font-size: calc(1.3em - 0.3vw);
+    }
+}
+@media screen and (max-width: 360px){
+    .contenedorCarta{
+        max-width: 360px;
+    }
+}
